@@ -1,6 +1,7 @@
 # 模块
 
 spring-boot-amqp-receiver  消息消费者
+
 spring-boot-amqp-sender    消息生产者
 
 # 步骤
