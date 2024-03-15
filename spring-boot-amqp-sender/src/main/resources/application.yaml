@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: spring-boot-amqp-sender
+  #rabbitmq 配置
+  rabbitmq:
+    host: 192.168.121.128
+    username: admin
+    password: admin
+    #虚拟主机
+    virtual-host: /
+    #端口
+    port: 5672
+
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 1h
+    context-path: /amqp
+  tomcat:
+    basedir: .
+    accesslog:
+      directory: log
+      enabled: true
+      file-date-format: .yyyyMMdd
+      buffered: true
+      rename-on-rotate: true
+      prefix: access
+      pattern: '%h %t [%I] %{Host}i %{X-Real-IP}i "%r" %s %b %D %F "%{Referer}i" "%{User-Agent}i"'
