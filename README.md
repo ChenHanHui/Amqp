@@ -6,7 +6,7 @@ spring-boot-amqp-sender    消息生产者
 
 # 步骤
 
-修改 spring-boot-amqp-receiver 中 application.yaml 的 rabbitmq.username 和 rabbitmq.password 为rabbitmq的用户名和密码，修改 rabbitmq.host 为虚拟机或者服务器的IP地址。
+修改 spring-boot-amqp-receiver 中 application.yml 的 rabbitmq.username 和 rabbitmq.password 为rabbitmq的用户名和密码，修改 rabbitmq.host 为虚拟机或者服务器的IP地址。
 
 将 spring-boot-amqp-receiver 打包发布到虚拟机或者服务器上。
 
